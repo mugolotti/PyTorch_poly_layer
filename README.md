@@ -1,7 +1,7 @@
 # PyTorch_poly_layer
 Polynomial layer module for PyTorch
 
-####### DESCRIPTION ######## \\
+####### DESCRIPTION ########
 This is a PyTorch module that builds a polynomial layer with any number of inputs and outputs.
 
 The layer outputs are a polynomial expansion of the inputs, which are the polynomial basis of given order n.
