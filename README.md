@@ -3,7 +3,13 @@ Polynomial layer module for PyTorch (** GitHub page under construction **)
 
 ## DESCRIPTION 
 This is a PyTorch module that builds a polynomial layer with any number of inputs and outputs.\
-The layer outputs are a polynomial expansion of the inputs, which are the polynomial basis of given order *n*.
+This particular layer introduces an "intermediate" layer (called *polynomial*) in between inputs and outputs, which consists of a set of polynomial basis of the inputs as shown in the figure. Then, the intermediate layer is linearly connected to the output layer.
+
+<img src="/images/poly_layer_diagram.png" width="500">
+
+The number of neurons in the intermediate polynomial layer is based on the user-defined order of the independent and interaction terms.
+
+This polynomial layer can be used either as a standalone model or used in more complex models, thus connecting it with other types of layers.
 
 ## HOW TO USE IT
 To use it, copy the file into the main working directory of your machine learning script and import it as
